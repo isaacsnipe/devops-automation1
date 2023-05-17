@@ -40,6 +40,21 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>JOMACS Releases Nexus Repository</name>
+	      <url>http://172.31.90.146:8081/repository/midanny-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>JOMACS Snapshot Nexus Repository </name>
+	      <url>http://172.31.90.146:8081/repository/maven-snapshots/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 
 	<build>
 		<plugins>
